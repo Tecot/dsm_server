@@ -11,8 +11,7 @@
 # source "/data1/apps/software/Miniconda3/4.9.2/etc/profile.d/conda.sh"
 # conda activate "/data3/platform/marine/envs/dsm"
 
-source /data1/apps/software/Miniconda3/4.9.2/etc/profile.d/conda.sh
-conda activate /data3/platform/marine/envs/dsm
+. /data1/apps/software/Miniconda3/4.9.2/etc/profile.d/conda.sh
+source activate /data3/platform/marine/envs/dsm
 
-celery -A server worker --loglevel=info & 
-python manage.py runserver 8173
+celery -A server worker --loglevel=info & python manage.py runserver 8173
