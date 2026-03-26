@@ -15,11 +15,12 @@ Description:
 import json
 from django.http import HttpResponse
 from django.views import View
-from app.services.workspace.get_task_statuses_service import get_task_statuses_service
+# from app.services.workspace.get_task_statuses_service import get_task_statuses_service
 
 class TaskStatuses(View):
     @staticmethod
     def get(request, keys_str):
-        data = get_task_statuses_service(keys_str)
+        # data = get_task_statuses_service(keys_str)
+        data = {}
         response = HttpResponse(json.dumps(data), content_type='application/json')
         return response

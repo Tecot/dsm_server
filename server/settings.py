@@ -138,7 +138,7 @@ SESSION_COOKIE_AGE = 60 * 60 * 24 * 14  # 有效期为两周
 # User analysis data ======================================================================(alter)
 MEDIA_URL = '/media/'
 # MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-MEDIA_ROOT = '/home/tecot/development/dsm/user_data'
+MEDIA_ROOT = '/data3/platform/marine/user_data'
 
 
 '''
@@ -166,7 +166,7 @@ Database struct
 # --------SRP121432_combined.csv
 
 #数据库根目录 ======================================================================(alter)
-DATABASE_PATH = '/home/tecot/development/dsm/datasets'
+DATABASE_PATH = '/data3/platform/marine/rawdata'
 
 # bio工程表目录
 SRP_INFO_FILE = 'bio_project_info.csv'
