@@ -1,5 +1,8 @@
 import os
 
 def get_files_from_dir(directory):
-    file_names = os.listdir(directory)
-    return file_names
+    zip_file_list = []
+    for filename in os.listdir(directory):
+        if filename.endswith(".zip"):
+            zip_file_list.append(filename)
+    return zip_file_list
